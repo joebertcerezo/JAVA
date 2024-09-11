@@ -15,7 +15,7 @@ public class Main
         SinglyLinkedList list = new SinglyLinkedList();
         int choice = 0;
         
-        while(choice<15)
+        while(choice<16)
             {
             System.out.println("1. Generate 5 numbers");
             System.out.println("2. insertAtTheBeginning");
@@ -30,7 +30,8 @@ public class Main
             System.out.println("11. deleteOdd");
             System.out.println("12. deleteRepeatingNode");
             System.out.println("13. destroyWholeNode");
-            System.out.println("14. display");
+            System.out.println("14. reverseList");
+            System.out.println("15. display");
             System.out.print("Enter Selected Number: ");
             choice = input.nextInt();
             
@@ -125,6 +126,11 @@ public class Main
                     System.out.println();
                     break;
                 case 14:
+                    System.out.println("\nreverseList");
+                    list.reverseList();
+                    System.out.println();
+                    break;
+                case 15:
                     System.out.println("\nDISPLAY");
                     list.display();
                     System.out.println();

@@ -37,7 +37,7 @@ public class StudentInfo
         System.out.println("Grade Level: " + this.gradeLevel);
     }
      
-      public void displayadviser()
+    public void displayadviser()
     {
         System.out.println("Adviser: " + this.adviser);
     }

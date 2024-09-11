@@ -31,6 +31,10 @@ class Shape
     {
         System.out.println("The formula for area of ");
     }
+    public static void cal()
+    {
+        System.out.println("call");
+    }
 }
 
 class Triangle extends Shape

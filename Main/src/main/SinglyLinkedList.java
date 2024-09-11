@@ -302,7 +302,51 @@ public class SinglyLinkedList {
         }
         start = null;
     }
-
+    
+    public void reverseList() throws Exception
+    {
+        start = reverseList(start);
+        display();
+    }
+    
+    public Node reverseList(Node node) throws Exception
+    {
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+        
+        while (current != null) 
+        {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        
+        node = prev;
+        
+        return node;
+    }
+    
+//    public Node reverseList() throws Exception
+//    {
+//        Node prev = null;
+//        Node current = start;
+//        Node next = null;
+//        
+//        while (current != null) 
+//        {
+//            next = current.next;
+//            current.next = prev;
+//            prev = current;
+//            current = next;
+//        }
+//        
+//        start = prev;
+//        
+//        return start;
+//    }
+    
     public void display() throws Exception 
     {
         if (getSize() == 0)

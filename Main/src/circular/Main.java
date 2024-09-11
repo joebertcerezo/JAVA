@@ -27,7 +27,7 @@ public class Main
             System.out.println("9. deleteAfter");
             System.out.println("10. deleteGiven");
             System.out.println("11. deleteEven");
-            System.out.println("13. deleteRepeatingNode");
+            System.out.println("12. deleteRepeatingNode");
             System.out.println("13. destroyWholeNode");
             System.out.println("14. display");
             System.out.print("Enter Selected Number: ");
